@@ -771,6 +771,193 @@ nav {
     }
 }
 
+/* ===== Experience Section ===== */
+
+.experience-section {
+    padding: 80px 20px;
+}
+
+.experience-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.experience-heading h2 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.experience-heading p {
+    font-size: 1.1rem;
+    opacity: 0.85;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* Timeline Wrapper */
+.experience-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Experience Card */
+.experience-card {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 30px;
+    padding: 30px;
+    background: var(--card-bg);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 255, 166, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 5px solid var(--primary);
+}
+
+.experience-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 35px rgba(0, 255, 166, 0.15);
+}
+
+/* Left Column */
+.experience-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.experience-logo {
+    width: 70px;
+    height: auto;
+    margin-bottom: 8px;
+}
+
+.experience-left h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.company {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.duration {
+    font-size: 0.9rem;
+    opacity: 0.75;
+}
+
+.location {
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+/* Right Column */
+.experience-right p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 14px;
+    opacity: 0.9;
+}
+
+.experience-right ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 16px;
+}
+
+.experience-right ul li {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.experience-right ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--primary);
+    font-size: 0.85rem;
+}
+
+/* Tech Stack */
+.experience-tech {
+    display: inline-block;
+    background: rgba(0, 255, 166, 0.12);
+    color: var(--primary);
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+/* Project / Website Link */
+.experience-link {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+    background: var(--primary);
+    padding: 10px 22px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    transition: 0.3s ease;
+}
+
+.experience-link:hover {
+    background: #00e79c;
+    transform: scale(1.05);
+}
+
+/* ===== Responsive Design ===== */
+
+@media (max-width: 900px) {
+    .experience-card {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-left {
+        align-items: center;
+        text-align: center;
+    }
+
+    .experience-logo {
+        margin: 0 auto 10px;
+    }
+
+    .experience-right {
+        text-align: left;
+    }
+}
+
+@media (max-width: 600px) {
+    .experience-heading h2 {
+        font-size: 2rem;
+    }
+
+    .experience-card {
+        padding: 22px;
+    }
+
+    .experience-left h3 {
+        font-size: 1.1rem;
+    }
+
+    .experience-right p,
+    .experience-right ul li {
+        font-size: 0.92rem;
+    }
+}
+
+
 
 /* ===== Certifications Section ===== */
 
